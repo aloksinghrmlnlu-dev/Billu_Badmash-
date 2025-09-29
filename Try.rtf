@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8">\
+  <title>Meow Comfort Zone \uc0\u55357 \u56382 </title>\
+  <style>\
+    body \{\
+      margin: 0;\
+      font-family: "Poppins", sans-serif;\
+      background: linear-gradient(135deg, #ffe6f0, #fff9f3);\
+      overflow-x: hidden;\
+      text-align: center;\
+    \}\
+\
+    h1 \{\
+      margin-top: 40px;\
+      color: #e75480;\
+      font-size: 3rem;\
+      text-shadow: 2px 2px #fff;\
+    \}\
+\
+    .card \{\
+      background: #fff;\
+      border-radius: 20px;\
+      padding: 20px;\
+      margin: 20px auto;\
+      width: 80%;\
+      max-width: 600px;\
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);\
+      animation: fadeIn 2s ease;\
+    \}\
+\
+    .card p \{\
+      font-size: 1.2rem;\
+      color: #444;\
+    \}\
+\
+    button \{\
+      background: #ff91af;\
+      border: none;\
+      padding: 15px 30px;\
+      border-radius: 30px;\
+      font-size: 1.1rem;\
+      cursor: pointer;\
+      margin: 20px;\
+      color: #fff;\
+      font-weight: bold;\
+      transition: 0.3s;\
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);\
+    \}\
+\
+    button:hover \{\
+      background: #ff6f91;\
+      transform: scale(1.05);\
+    \}\
+\
+    .floating-cat \{\
+      position: absolute;\
+      font-size: 2rem;\
+      animation: floatCats 10s infinite linear;\
+      opacity: 0.8;\
+    \}\
+\
+    @keyframes floatCats \{\
+      from \{ transform: translateY(100vh) rotate(0deg); \}\
+      to \{ transform: translateY(-10vh) rotate(360deg); \}\
+    \}\
+\
+    @keyframes fadeIn \{\
+      from \{ opacity: 0; transform: translateY(20px); \}\
+      to \{ opacity: 1; transform: translateY(0); \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+  <h1>Hey, My Lovely Period Queen \uc0\u55357 \u56401 </h1>\
+\
+  <div class="card">\
+    <p>\uc0\u55357 \u56892  *Teasing Mode:* Even cats would agree... you\'92re scarier than a tiger right now! \u55357 \u56367 </p>\
+    <p>But hey... even tigers deserve extra cuddles.</p>\
+  </div>\
+\
+  <div class="card">\
+    <p>\uc0\u55357 \u56890  *Comfort Mode:* Cramps are tough, I know...  \
+       but think of me as your personal hot-water bottle + snack supplier \uc0\u55356 \u57195 \u9749 </p>\
+  </div>\
+\
+  <div class="card">\
+    <p>\uc0\u55357 \u56382  Fun Fact: Cats sleep 70% of their lives.  \
+       You\'92re officially licensed to nap guilt-free today \uc0\u55357 \u56884 \u55357 \u56469 </p>\
+  </div>\
+\
+  <button onclick="sendCuddles()">Send Virtual Cuddles \uc0\u55357 \u56382 </button>\
+  <p id="cuddleCounter">Cuddles sent: 0</p>\
+\
+  <audio id="meowSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>\
+  <button onclick="playMeow()">Play Meow \uc0\u55356 \u57270 </button>\
+\
+  <script>\
+    let cuddleCount = 0;\
+\
+    function sendCuddles() \{\
+      cuddleCount++;\
+      document.getElementById("cuddleCounter").innerText = "Cuddles sent: " + cuddleCount;\
+    \}\
+\
+    function playMeow() \{\
+      document.getElementById("meowSound").play();\
+    \}\
+\
+    // Generate floating cats\
+    for (let i = 0; i < 12; i++) \{\
+      let cat = document.createElement("div");\
+      cat.innerText = "\uc0\u55357 \u56369 ";\
+      cat.classList.add("floating-cat");\
+      cat.style.left = Math.random() * 100 + "vw";\
+      cat.style.animationDuration = (8 + Math.random() * 5) + "s";\
+      document.body.appendChild(cat);\
+    \}\
+  </script>\
+</body>\
+</html>\
+}
